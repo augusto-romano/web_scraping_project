@@ -13,7 +13,7 @@ Baixar os arquivos para a pasta local chamada downloads.
 
 Como Funciona
 1. Extração dos Links
-O script utiliza a biblioteca BeautifulSoup para fazer o parsing do HTML da página e encontra todos os links (<a href="...">) que apontam para arquivos PDF. Ele então filtra esses links para garantir que apenas os dois arquivos específicos sejam extraídos com base no nome do arquivo.
+O script utiliza a biblioteca BeautifulSoup para fazer o parsing do HTML da página e encontra todos os links href="..." que apontam para arquivos PDF. Ele então filtra esses links para garantir que apenas os dois arquivos específicos sejam extraídos com base no nome do arquivo.
 
 2. Download dos Arquivos
 A cada link extraído, o script faz o download do arquivo PDF e o salva na pasta downloads no diretório atual. A verificação é feita para garantir que o arquivo baixado seja exatamente o arquivo desejado.
@@ -24,7 +24,6 @@ Python 3.x instalado no seu sistema.
 Bibliotecas externas:
 
 requests
-
 beautifulsoup4
 
 Você pode instalar as dependências utilizando o pip:
@@ -38,15 +37,11 @@ No terminal, navegue até o diretório onde o código foi salvo.
 Execute o script com o comando:
 
 python main.py
+
 Os arquivos PDF especificados serão baixados para a pasta downloads na mesma pasta onde o script está localizado.
 
 Estrutura do Projeto
 
-web_scraping_project/
-│
-├── main.py            # Script principal para executar o web scraping e download.
-├── scraper.py         # Contém funções para extrair os links e fazer o download.
-└── README.md          # Este arquivo de documentação.
 
 Personalização
 PDF_NAME_1 e PDF_NAME_2 são as variáveis que contêm os nomes dos arquivos PDF a serem baixados. Se precisar de outros arquivos, basta atualizar essas variáveis.

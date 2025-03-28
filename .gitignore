@@ -1,0 +1,6 @@
+# Arquivos temporários do sistema
+*.log
+*.tmp
+*.swp
+.DS_Store
+node_modules/
